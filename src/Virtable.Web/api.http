@@ -1,0 +1,28 @@
+@host=https://localhost
+@port=57679
+@hostName={{host}}:{{port}}
+
+GET {{hostName}}/api/contributors
+
+###
+
+GET {{host}}:{{port}}/api/contributors/1
+
+###
+
+PUT {{host}}:{{port}}/api/contributors
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "Martin Yao"
+}
+
+###
+
+POST {{hostName}}/api/contributors
+Content-Type: application/json
+
+{
+    "name": "Newcommer3"
+}

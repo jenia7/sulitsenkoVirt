@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Sdk Name="Microsoft.Build.CentralPackageVersions" Version="2.1.3" />
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.SmartEnum.EFCore" />
+    <PackageReference Include="Ardalis.Specification.EntityFrameworkCore" />
+    <PackageReference Include="Autofac" />
+    <PackageReference Include="MediatR" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Virtable.Core\Virtable.Core.csproj" />
+    <ProjectReference Include="..\Virtable.UseCases\Virtable.UseCases.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Data\Migrations\" />
+    <Folder Include="Data\Queries\" />
+    <Folder Include="Email\" />
+  </ItemGroup>
+</Project>
